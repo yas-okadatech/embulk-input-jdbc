@@ -49,6 +49,7 @@ public class MySQLInputConnection
             // useCursorFetch=true is enabled. MySQL creates temporary table and uses multiple select statements to fetch rows.
             stmt.setFetchSize(fetchRows);
         }
+        logger.info("Final SQL: {}", stmt.toString());
         // Because socketTimeout is set in Connection, don't need to set quertyTimeout.
         return new SingleSelect(stmt);
     }
