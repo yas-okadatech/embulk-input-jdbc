@@ -50,6 +50,7 @@ public class MySQLInputConnection
             stmt.setFetchSize(fetchRows);
         }
         logger.info("Final SQL: {}", stmt.toString());
+        logger.info("Statement class: {}", stmt.getClass().getName());
         // Because socketTimeout is set in Connection, don't need to set quertyTimeout.
         return new SingleSelect(stmt);
     }
