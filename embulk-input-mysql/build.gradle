@@ -56,3 +56,11 @@ publishing {
         }
     }
 }
+gem {
+    from("LICENSE.txt")
+    authors = [ "" ]
+    email = [ "" ]
+    summary = "MySQL output plugin for Embulk"
+    homepage = ""
+    licenses = [ "MIT" ]
+}
