@@ -1,8 +1,8 @@
 dependencies {
     implementation(project(path: ":embulk-input-jdbc", configuration: "runtimeElements"))
 
-    compileOnly "mysql:mysql-connector-java:5.1.44"
-    defaultJdbcDriver 'mysql:mysql-connector-java:5.1.44'
+    compileOnly "mysql:mysql-connector-java:8.0.15"
+    defaultJdbcDriver 'mysql:mysql-connector-java:8.0.15'
 
     testImplementation "com.google.guava:guava:18.0"
     testImplementation "org.embulk:embulk-formatter-csv:0.11.1"
